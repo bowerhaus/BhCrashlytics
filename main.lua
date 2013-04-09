@@ -3,7 +3,7 @@
  
 A quick demonstration of Crashlytics crash logging for Gideros SDK. 
 
-Most crash logging systems record only the unlying processor stack trace when a crash/exception occurs. For Lua errors, where
+Most crash logging systems record only the underlying processor stack trace when a crash/exception occurs. For Lua errors, where
 the app will probably just exit normally without throwing an exception, this is of little use. Here we demonstrate the 
 BhCrashlytics plugin which works with the http://www.crashlytics.com logging service to log not only
 raw crashes but also ones caused by a Lua error. In the case of the latter, the Lua stack trace is logged along with
@@ -33,7 +33,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 require "BhCrashlytics"
 
 -- Install the crash logging ASAP after app startup. Ideally in init.lua.
-BhCrashlytics.installCrashReporting("dbeb8de8d2d182c94343b6f4944760c794fb378d")
+BhCrashlytics.installCrashReporting("YOURKEYHERE")
 
 function breadcrumb(...)
 	-- With Crashlytics you can leave breadcrumb trails. Using this method we can log these to the Gideros SDK console and the XCode console
