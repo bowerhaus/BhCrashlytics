@@ -2,7 +2,7 @@
 # BhCrashlyticsDemo.lua
  
 A quick demonstration of Crashlytics crash logging for Gideros SDK. 
-
+ 
 Most crash logging systems record only the underlying processor stack trace when a crash/exception occurs. For Lua errors, where
 the app will probably just exit normally without throwing an exception, this is of little use. Here we demonstrate the 
 BhCrashlytics plugin which works with the http://www.crashlytics.com logging service to log not only
